@@ -5,6 +5,9 @@ import gsap from 'gsap';
 import CinematicLayer from './CinematicLayer';
 import styles from './VideoHero.module.css';
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const videoSrc = `${basePath}/assets/intro-video.mp4`;
+
 export default function VideoHero() {
   const heroRef = useRef<HTMLElement>(null);
   const fgVideoRef = useRef<HTMLVideoElement>(null);
@@ -107,7 +110,7 @@ export default function VideoHero() {
         <video
           ref={bgVideoRef}
           className={styles.ambientVideo}
-          src="/assets/intro-video.mp4"
+          src={videoSrc}
           autoPlay
           loop
           muted
@@ -119,7 +122,7 @@ export default function VideoHero() {
         <video
           ref={fgVideoRef}
           className={styles.mainVideo}
-          src="/assets/intro-video.mp4"
+          src={videoSrc}
           autoPlay
           loop
           muted={isMuted}
