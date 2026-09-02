@@ -1,0 +1,398 @@
+.section {
+  padding: 8rem 2rem;
+  background-color: #07090e;
+  position: relative;
+}
+
+.sectionAlt {
+  padding: 8rem 2rem;
+  background-color: #0b0e17;
+  position: relative;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  margin-bottom: 4rem;
+}
+
+.sectionBadge {
+  display: inline-block;
+  font-family: var(--font-mono, monospace);
+  font-size: 0.78rem;
+  letter-spacing: 0.15em;
+  color: #ff8a3d;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.sectionTitle {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+  max-width: 800px;
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.aboutCardMain {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 24px;
+  padding: 3rem;
+  backdrop-filter: blur(12px);
+}
+
+.leadParagraph {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #f1f5f9;
+  margin-bottom: 1.5rem;
+}
+
+.bodyParagraph {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #94a3b8;
+  margin-bottom: 2.5rem;
+}
+
+.credentialsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 2rem;
+}
+
+.credentialItem {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.credIcon {
+  color: #ff8a3d;
+  font-size: 1.1rem;
+}
+
+.credentialItem strong {
+  display: block;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.credentialItem p {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.statsColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.statBox {
+  background: rgba(255, 138, 61, 0.03);
+  border: 1px solid rgba(255, 138, 61, 0.15);
+  border-radius: 20px;
+  padding: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.statNumber {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #ff8a3d;
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  font-weight: 500;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.skillCard {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2.2rem;
+}
+
+.skillCategoryTitle {
+  font-size: 1.15rem;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.pillCluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skillPill {
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  color: #e2e8f0;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.timelineItem {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 1.5rem;
+}
+
+.timelineMarker {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.timelineMarker::after {
+  content: '';
+  position: absolute;
+  top: 24px;
+  bottom: -2.5rem;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.timelineItem:last-child .timelineMarker::after {
+  display: none;
+}
+
+.timelineDot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ff8a3d;
+  box-shadow: 0 0 12px #ff8a3d;
+  margin-top: 6px;
+}
+
+.timelineCard {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2.2rem;
+}
+
+.timelineCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+}
+
+.roleTitle {
+  font-size: 1.25rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.companyTitle {
+  font-size: 0.95rem;
+  color: #ff8a3d;
+  font-weight: 600;
+  margin-top: 0.2rem;
+}
+
+.locationText {
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+.periodBadge {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.78rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  color: #cbd5e1;
+}
+
+.highlightsList {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  color: #94a3b8;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 2rem;
+}
+
+.projectCard {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 138, 61, 0.4);
+}
+
+.projectCategory {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.75rem;
+  color: #ff8a3d;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.projectTitle {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.projectDescription {
+  color: #94a3b8;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 1.75rem;
+  flex-grow: 1;
+}
+
+.projectStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.techTag {
+  font-size: 0.78rem;
+  background: rgba(255, 255, 255, 0.06);
+  color: #cbd5e1;
+  padding: 0.35rem 0.7rem;
+  border-radius: 6px;
+}
+
+.contactSection {
+  padding: 8rem 2rem 4rem;
+  background-color: #07090e;
+}
+
+.contactCard {
+  background: radial-gradient(circle at top right, rgba(255, 138, 61, 0.1) 0%, rgba(255, 255, 255, 0.02) 60%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 32px;
+  padding: 4.5rem 3rem 2.5rem;
+  text-align: center;
+}
+
+.contactTitle {
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+.contactSubtitle {
+  color: #94a3b8;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 3.5rem;
+}
+
+.contactInfoGrid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.contactLink {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1.2rem 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+  text-align: left;
+  transition: all 0.25s ease;
+}
+
+.contactLink:hover {
+  background: rgba(255, 138, 61, 0.1);
+  border-color: rgba(255, 138, 61, 0.3);
+  transform: translateY(-2px);
+}
+
+.contactIcon {
+  font-size: 1.5rem;
+  color: #ff8a3d;
+}
+
+.contactLabel {
+  display: block;
+  font-size: 0.75rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.contactValue {
+  font-size: 0.95rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.footerBottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 2rem;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 860px) {
+  .aboutGrid {
+    grid-template-columns: 1fr;
+  }
+}
